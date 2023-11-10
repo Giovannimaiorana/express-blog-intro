@@ -1,0 +1,52 @@
+[
+    {
+        "titolo": "Viaggio Estivo",
+        "contenuto": "Esperienze straordinarie sotto il sole estivo, tra spiagge dorate e avventure in luoghi nascosti.",
+        "immagine": "url_immagine_viaggio_estivo.jpg",
+        "tags": [
+            "viaggio",
+            "estate",
+            "avventure"
+        ]
+    },
+    {
+        "titolo": "Ricette Gustose",
+        "contenuto": "Scopri le deliziose ricette culinarie che renderanno le tue giornate ancora più speciali.",
+        "immagine": "url_immagine_ricette_gustose.jpg",
+        "tags": [
+            "cucina",
+            "ricette",
+            "gusto"
+        ]
+    },
+    {
+        "titolo": "Fitness e Benessere",
+        "contenuto": "Consigli e allenamenti per mantenere la forma fisica e raggiungere il benessere totale.",
+        "immagine": "url_immagine_fitness_benessere.jpg",
+        "tags": [
+            "fitness",
+            "benessere",
+            "salute"
+        ]
+    },
+    {
+        "titolo": "Tecnologia del Futuro",
+        "contenuto": "Scopri le ultime innovazioni tecnologiche che stanno plasmando il nostro futuro.",
+        "immagine": "url_immagine_tecnologia_futuro.jpg",
+        "tags": [
+            "tecnologia",
+            "innovazione",
+            "futuro"
+        ]
+    },
+    {
+        "titolo": "Arte Contemporanea",
+        "contenuto": "Esplora il mondo dell'arte contemporanea attraverso opere straordinarie e artisti visionari.",
+        "immagine": "url_immagine_arte_contemporanea.jpg",
+        "tags": [
+            "arte",
+            "contemporanea",
+            "ispirazione"
+        ]
+    }
+]
