@@ -1,12 +1,13 @@
-
+const fs = require('fs');
+const path = require('path');
 const posts = require("../db/listaPost.json");
 
 
 function index(req, res) {
     res.format({
         html: () => {
-            const html = [`<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-            <h1>Lista Post</h1>`];
+            const headerContent = fs.readFileSync('header.html', 'utf8');
+            const html = [`${headerContent} <h3> I miei Post </h3>`];
             html.push("<ul>")
             for (const post of posts) {
                 html.push(`<li>

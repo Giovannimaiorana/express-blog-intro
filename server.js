@@ -13,8 +13,11 @@ const app = express();
 //configurazione per file statici
 app.use(express.static("public"));
 
-//definizione rotte
+//definizione rotte home 
 app.get("/", homeController.index);
+app.get("/about", homeController.about);
+app.get("/contacts", homeController.contacts);
+//definizione rotta posts
 app.get("/posts", postController.index);
 
 // Avviamo il server

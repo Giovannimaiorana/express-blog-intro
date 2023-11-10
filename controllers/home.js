@@ -2,14 +2,15 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 
-
+// index function 
 function index(req, res) {
     res.format({
         text: () => {
             res.type("text").send("Benvenuto nel mio blog!");
         },
         html: () => {
-            res.type("html").send("<h1>Benvenuto nel mio blog!</h1>")
+            const htmlPage = fs.readFileSync(path.resolve(__dirname, "../index.html"))
+            res.type("html").send(htmlPage)
         },
         json: () => {
             res.type("json").send({
@@ -22,6 +23,22 @@ function index(req, res) {
     })
 }
 
+// about function
+function about(req, res) {
+    const headerContent = fs.readFileSync(path.resolve(__dirname, "../header.html"), 'utf8');
+    res.send(`${headerContent}<h1>About page</h1>`);
+}
+
+// contact function
+
+function contacts(req, res) {
+    const headerContent = fs.readFileSync(path.resolve(__dirname, "../header.html"), 'utf8');
+
+    res.send(`${headerContent}<h1>Contacts page</h1>`);
+}
+
 module.exports = {
     index,
+    about,
+    contacts
 }
