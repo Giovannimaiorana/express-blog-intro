@@ -1,15 +1,21 @@
 //importazione express
 const express = require("express");
 const dotenv = require("dotenv");
-//importo controller
+//importo controller home
 const homeController = require("./controllers/home");
+//importo controller posts
+const postController = require("./controllers/posts");
 dotenv.config();
 
 //istanza di express
 const app = express();
 
+//configurazione per file statici
+app.use(express.static("public"));
+
 //definizione rotte
 app.get("/", homeController.index);
+app.get("/posts", postController.index);
 
 // Avviamo il server
 app.listen(process.env.PORT || 3000, () => {
